@@ -1,0 +1,226 @@
+body, h1, h2, h3, p, ul, li, img, form, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Life+Savers', cursive;
+  font-size: 16px;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+nav {
+  position: fixed ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: 'Life+Savers', cursive;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #333;
+  background-color: #e3f2fd;
+  padding: 10px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+.navbar-text {
+  text-align: center;
+}
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  font-style: oblique;
+  font-family: 'Sigmar', cursive;
+  color: rgb(51, 0, 255);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#breadcrumb {
+  background-color: #c7cacb;
+  
+}
+
+  /* Style Modal inscription*/
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+label.inline-label {
+  display: inline-block;
+}
+fieldset {
+  border: 1px solid lightgray;
+  background-color: rgba(225, 233, 255, 0.25);
+}
+legend {
+  font-style: italic;
+  font-size: 1.1em;
+  padding: 5px;
+}
+form input, form select, form textarea {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 80%;
+}
+form input[type="radio"],
+form input[type="checkbox"],
+button[type=submit] {
+  padding: 10px;
+  margin-top: 15px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
+  -moz-box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
+  box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+  /* Style Carousel*/
+#carouselFade {
+  margin-right: 80px;
+  margin-left: 80px;
+  object-fit: cover;
+}
+p {
+  margin-bottom: 2em;
+}
+
+  /* Style Form contact*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
+  -moz-box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
+  box-shadow: 0px 0px 36px -7px rgba(171,171,171,1);
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+input, textarea, select {
+  margin-bottom: 1rem;
+  border-radius: 7px;
+  padding: 0.3rem;
+  border: solid 1px;
+  resize: none;
+}
+textarea {
+  max-width: 400px;
+  letter-spacing: 1px;
+}
+input:focus, textarea:focus, select:focus, button:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 11px -7px #bac4bf;
+  -moz-box-shadow: 0px 0px 11px -7px #bac4bf;
+  box-shadow: 0px 0px 11px -7px #bac4bf;
+  border: solid 1px #d5e1db;
+}
+label {
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  font: 300 2rem 'Oswald', sans-serif;
+  letter-spacing: 2px;
+  }
+.form-horizontal {
+  max-width: 350px;
+  font-family: 'Lato';
+  font-weight: 400;
+}
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 240px;
+  background-color: #d5e1db;
+  border: none;
+  border-radius: 7px;
+  font: 300 14px 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+.send-button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #bac4bf;
+}
+.advert-wrapper {
+  color: grey;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+/*Style Footer*/
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.footer-text {
+  margin-left: 150px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 480px) {
+  header, nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li { 
+    margin: 10px 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto; /* Garantit que la hauteur de l'image s'ajuste automatiquement à la largeur */
+  }
+}
+
+
+
+
