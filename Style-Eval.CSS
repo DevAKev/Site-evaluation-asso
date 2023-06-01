@@ -47,7 +47,6 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   font-style: oblique;
   font-family: 'Sigmar', cursive;
   color: rgb(51, 0, 255);
@@ -56,12 +55,38 @@ nav a {
   margin-bottom: 0.5rem;
 }
 
+.navbar-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  margin-right: 1.5rem;
+}
+
+.nav-link:hover {
+  color: #3b6b94;
+}
+
 #breadcrumb {
   background-color: #c7cacb;
   
 }
 
   /* Style Modal inscription*/
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.modal-header {
+  border-bottom: none;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
 form label {
   display: block;
   font-weight: bold;
@@ -104,12 +129,30 @@ form {
 
   /* Style Carousel*/
 #carouselFade {
-  margin-right: 80px;
-  margin-left: 80px;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.carousel-inner img {
   object-fit: cover;
 }
-p {
-  margin-bottom: 2em;
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
   /* Style Form contact*/
@@ -184,6 +227,57 @@ label {
   font-size: 0.8rem;
   margin-top: 2rem;
 }
+/* Style Card */
+
+h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+h2 {
+  margin-left: 1rem;
+}
+
+h3 {
+  margin-left: 1rem;
+}
+
+.card {
+  border-radius: 15px;
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.btn-success {
+  background-color: #3b6b94;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #042b50;
+}
+
+p {
+  margin-bottom: 2em;
+}
+
 /*Style Footer*/
 footer {
   background-color: #333;
@@ -205,7 +299,13 @@ footer {
 
 /* Media queries */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 567px) {
+  .navbar-toggler {
+    position: fixed;
+    top: 80px; 
+    right: 20px; 
+  }
+
   header, nav ul {
     flex-direction: column;
     align-items: center;
@@ -217,9 +317,11 @@ footer {
 
   img {
     max-width: 100%;
-    height: auto; /* Garantit que la hauteur de l'image s'ajuste automatiquement à la largeur */
-  }
+    height: auto;
 }
+}
+
+
 
 
 

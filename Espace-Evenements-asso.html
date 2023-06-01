@@ -104,19 +104,20 @@
 <!--Fil d'ariane-->
   <div id="breadcrumb" class="container-fluid row mt-3">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="Eval-Asso.html">Accueil</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Événements</li>
+        <li class="breadcrumb-item mt-2"><a href="Eval-Asso.html">Accueil</a></li>
+        <li class="breadcrumb-item active mt-2" aria-current="page">Événements</li>
       </ol>
     
   </div>
 
 <!--Début page-->
-<div class="row row-cols-1 row-cols-sm-2"></div>
+<div class="row row-cols-1 row-cols-sm-2 p-4"></div>
 <section>
 <h2>Participer à un événement :<small class="text-muted"> Atelier Observation de la faune et la flore</small></h2>
+<br>
     <div class="card">
       <img src="Rouge-gorge-fleurs.jpg" 
-          class="card-img-top rounded-3" alt="Rouge-gorge">
+          class="card-img-top p-4 rounded-3" alt="Rouge-gorge">
           <div class="card-body">
               <h5 class="card-title">Accompagnez-nous pour observer la nature comme vous ne l'avez jamais vu ! </h5>
               <p class="card-text">
@@ -214,8 +215,8 @@
 </div>
 </section>
 
-<section class="col">
-  <h2>Participants à l'événement (20 places disponibles)</h2>
+<section class="col p-4">
+  <h4>Participants à l'événement (20 places disponibles)</h4>
   <p> Participants à l'événement: 10 / 20 places disponibles </p>
   <div class="progress">
       <div 
@@ -231,12 +232,14 @@
 </section>
 
 <!--Second atelier-->
+<div class="row row-cols-1 row-cols-sm-2 p-4"></div>
 <section>
   <br>
 <h2>Participer à un événement :<small class="text-muted"> Collecte des déchets en milieux naturels</small></h2>
+<br>
     <div class="card">
       <img src="collecte-déchets.jpg" 
-          class="card-img-top rounded-3" alt="Rouge-gorge">
+          class="card-img-top p-4 rounded-3" alt="Rouge-gorge">
           <div class="card-body">
               <h5 class="card-title"> Laissons un monde propre à nos enfants ! </h5>
               <p class="card-text">
@@ -341,8 +344,8 @@
 </div>
 </section>
 
-<section class="col">
-  <h2>Participants à l'événement (40 places disponibles)</h2>
+<section class="col p-4 mb-4">
+  <h4>Participants à l'événement (40 places disponibles)</h4>
   <p> Participants à l'événement: 30 / 40 places disponibles </p>
   <div class="progress">
       <div 
@@ -539,7 +542,7 @@ Envoyer le message
       <div class="form-group">
         <label 
         data-toggle="tooltip" 
-        title="" 
+        title="CVV" 
         data-original-title="3 derniers chiffres dos de la carte">Chiffres Clés
         <i class="fa fa-question-circle"></i>
       </label>
@@ -555,18 +558,18 @@ Envoyer le message
         <legend>Newsletter</legend>
   
         <input type="checkbox" name="newsletter" id="newsletter">
-          <label for="newsletter" class="inline-label">J'accepte de recevoir la newsletter</label>
+          <label for="newsletter" class="inline-label p-4">J'accepte de recevoir la newsletter</label>
       </fieldset>
       
       <fieldset>
         <div>
-          <label for="Usecondition" class="inline-label">Je déclare avoir consulté les conditions 
+          <label for="Usecondition" class="inline-label p-4">Je déclare avoir consulté les conditions 
           générales d'utilisations et je donne mon accord</label>
           <input type="checkbox" name="Usecondition" id="Usecondition" required>
         </div>
   
-        <button type="reset">Réinitialiser le formulaire</button>
-        <button type="submit">Soumettre le formulaire</button>
+        <button class="btn btn-danger" type="reset">Réinitialiser le formulaire</button>
+        <button class="btn btn-primary" type="submit">Soumettre le formulaire</button>
   
       </fieldset>
     </form>
