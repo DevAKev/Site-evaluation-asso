@@ -299,7 +299,7 @@ footer {
 
 /* Media queries */
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 991px) {
   .navbar-toggler {
     position: fixed;
     top: 80px; 
@@ -318,7 +318,13 @@ footer {
   img {
     max-width: 100%;
     height: auto;
+  }
 }
+
+@media screen and (min-width: 991px),(max-width: 1180px) {
+  nav{ 
+    height: 100%;
+  }
 }
 
 
