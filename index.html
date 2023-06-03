@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Referencement description-->
+  <title>Les amis de la montagne - Ensemble pour préserver la nature </title>
+  <meta name="description" content="La montagne est une merveille naturel à préserver. 
+  Rejoignez l'association des amis de la montagne pour agir en faveur de sa protection et de 
+  la sauvegarde de sa faune. Ensemble, agissons pour mener des actions concrètes afin de limiter 
+  l'impact de l'homme sur cet environnement fragile, contribuons à sa préservation pour les 
+  générations futures !">
+    <meta name="author" content="Association - Les amis de la montagne">
+  <!--Lien vers icone titre de la page-->
+  <link rel="icon" type="image/svg+xml" href="medias/snow2.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/88773cb8bb.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="Style-Eval.CSS">
+  <!--Lien Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--navbar-->
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-fixed-top bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <div class="navbar-brand" href="#">
+        <div class="navbar-title">Les amis de la montagne</div>
+        <img 
+      id="logo-nav"
+      src="medias\Logo-montagne.webp" 
+      alt="logo-nav" 
+      height="150;" 
+      width= "200;"
+      class="d-inline-block align-text-center p-2">
+    </div>
+    
+      <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <a href="#"><span class="navbar-toggler-icon"></span>
+      <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      width="48" 
+      height="48" 
+      fill="currentColor" 
+      class="bi bi-list" 
+      viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      </svg></a>
+    
+      </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a href="Espace-Evenements-asso.html" class="nav-link">Nos évènements</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Inscription-membres" class="nav-link">Devenez adhérent</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" 
+        href="#Connexion-membres">Espace membres</a>
+      </li>
+
+<!--Button DON-->
+<button 
+  type="button"
+  class="btn btn-success btn-block" 
+  data-bs-toggle="modal" 
+  data-bs-target="#confirmDon">Faire un don
+  <svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  width="60" 
+  height="32" 
+  fill="currentColor" 
+  class="bi bi-heart-fill" 
+  viewBox="0 0 16 16">
+    <path fill-rule="evenodd" 
+    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+  </svg>
+</button>
+</ul>
+</div>
+</div>
+</nav>
+
+<div 
+  class="modal" 
+  tabindex="-1" 
+  role="dialog" 
+  id="confirmDon">
+  <div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Formulaire d'inscription</h5>
+        <button 
+          type="button" 
+          class="btn-close" 
+          data-bs-dismiss="modal" 
+          aria-label="Close">
+        </button>
+        </div>
+<div class="modal-body">
+  <article class="card">
+    <div class="card-body p-5">
+      <ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
+            <i class="fa fa-credit-card"></i> Carte bancaire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
+              <i class="fa fa-paypal"></i>  Paypal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#nav-tab-bank">
+                <i class="fa fa-university"></i>  Virement bancaire</a>
+              </li>
+            </ul>
+          </div> 
+</article>
+<div class="tab-content">
+  <div class="tab-pane fade show active" id="nav-tab-card">
+    <form>
+      <div class="form-group">
+        <label for="email">Votre adresse email</label>
+        <input
+        type="email"
+        class="form-control"
+        name="email"
+        placeholder="email@email.com"
+        required="required">
+      </div>
+      <div class="form-group">
+        <label for="Password">Votre mot de passe</label>
+        <input
+        type="password"
+        class="form-control"
+        name="Password"
+        placeholder="Saisissez votre mot de passe"
+        required="required">
+      </div>
+      <div class="form-group">
+        <label for="number">Montant du don</label>
+        <input
+        type="number"
+        class="form-control"
+        name="Montant"
+        required="required">
+      </div>
+      <div class="form-group">
+        <label for="text">Votre nom (Nom présent sur la carte)</label>
+        <input
+        type="text"
+        class="form-control"
+        name="username"
+        required="required">
+      </div>
+      <div class="form-group">
+        <label for="cardNumber">Numéro de carte
+          <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="16" 
+          height="16" 
+          fill="currentColor" 
+          class="bi bi-credit-card" 
+          viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+            <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+          </svg>
+        </label>
+        <div class="input-group">
+          <input
+          type="number"
+          class="form-control"
+          name="cardNumber">
+          <div class="input-group-append">
+            <span class="input-group-text text-muted">
+              <i class="fab fa-cc-visa"></i> &nbsp; 
+              <i class="fab fa-cc-amex"></i> &nbsp;
+              <i class="fab fa-cc-mastercard"></i> 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+        <div class="form-group">
+          <label>Expiration</label>
+        <div class="input-group">
+          <input 
+          type="number" 
+          class="form-control" 
+          placeholder="MM" 
+          name="mois">
+          <input 
+          type="number" 
+          class="form-control" 
+          placeholder="AA" 
+          name="année">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label 
+        data-toggle="tooltip" 
+        title="CVV" 
+        data-original-title="3 derniers chiffres dos de la carte">Chiffres Clés
+        <i class="fa fa-question-circle"></i>
+      </label>
+      <input
+      type="number" 
+      class="form-control" 
+      required="required">
+    </div>
+  </div>
+</div> 
+      <button class="subscribe btn btn-primary btn-block mt-3" type="submit"> Confirmer </button>
+      <fieldset>
+        <legend>Newsletter</legend>
+  
+        <input type="checkbox" name="newsletter" id="newsletter">
+          <label for="newsletter" class="inline-label p-4">J'accepte de recevoir la newsletter</label>
+      </fieldset>
+      
+      <fieldset>
+        <div>
+          <label for="Usecondition" class="inline-label p-4">Je déclare avoir consulté les conditions 
+          générales d'utilisations et je donne mon accord</label>
+          <input type="checkbox" name="Usecondition" id="Usecondition" required>
+        </div>
+  
+        <button class="btn btn-danger" type="reset">Réinitialiser le formulaire</button>
+        <button class="btn btn-primary" type="submit">Soumettre le formulaire</button>
+  
+      </fieldset>
+    </form>
+   </div> 
+  </div> 
+ </div> 
+</div> 
+</div> 
+</div>
+<!--Carousel Galerie Photos-->
+<div id="carouselFade" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img 
+      src="medias/Bateau-lac-montagne.jpg" 
+      class="d-block w-100" 
+      alt="Bateau-lac"
+      style="height: 100%; width: 100%;">
+    </div>
+    <div class="carousel-item">
+      <img 
+      src="medias/rocks-mountain.jpg" 
+      class="d-block w-100" 
+      alt="Rocks"
+      style="height: 100%; width: 100%;">
+    </div>
+    <div class="carousel-item">
+      <img 
+      src="medias/Glaciers-Chili.jpg" 
+      class="d-block w-100" 
+      alt="Glaciers-Chili"
+      style="height: 100%; width: 100%;">
+    </div>
+    <div class="carousel-item">
+      <img 
+      src="medias/Bouquetin-mountain.jpg" 
+      class="d-block w-100" 
+      alt="Bouquetin"
+      style="height: 100%; width: 100%;">
+    </div>
+  </div>
+  <button 
+  class="carousel-control-prev" 
+  type="button" 
+  data-bs-target="#carouselFade" 
+  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button 
+  class="carousel-control-next" 
+  type="button" 
+  data-bs-target="#carouselFade" 
+  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </header>
+
+  <!--Contenue de la page-->
+<main class="container">
+  <section>
+    <h1 class="text-center" >Bienvenue sur la page d'accueil</h1>
+    <div class="row row-cols-1 row-cols-sm-2">
+      <article class="col p-2">
+        <div class="card">
+          <img src="medias/Canoe-nature.jpg" 
+              class="card-img-top rounded-3" alt="Sport-Nature">
+              <div class="card-body">
+                  <h2 class="card-title">Le sport et la nature</h2>
+                  <p class="card-text">
+                    La pratique du sport en plein air dans des sites naturels peut être 
+                    néfastes pour la nature. En effet, certaines activités occasionnent une 
+                    pollution atmosphérique et auditive. Tout comme les participants aux 
+                    manifestations sportives qui laissent derrière eux des déchets. Sans bien 
+                    évidemment oublier de citer, les rivières qui sont piétinées ou encore la 
+                    réduction des espaces indispensables aux animaux. Que ce soit en milieu 
+                    terrestre ou aquatique, force est de constater que l’humain cause des dommages 
+                    inconsciemment à la nature.
+                    Il n’est donc plus à expliquer que les différentes actions de la part de 
+                    l’Homme nuisent à des espèces végétales, animales ainsi qu’à l’intégrité 
+                    des écosystèmes et contribue au changement climatique (Fonte des neiges 
+                    prématurée, disparition des glaciers, extinction d'espèces protégées...). 
+                    Cependant, afin de remédier aux problèmes d’impacts sur l’environnement, 
+                    des résolutions ont été prises. 
+                    Pour pratiquer le sport en pleine nature, il est donc nécessaire :
+                    
+                    <li>De disposer d’une éthique de la responsabilité et de l'écologie</li>
+                    <li>D’avoir une bonne connaissance du milieu dans lequel vous vous aventurez</li>
+                    <li>Et enfin, de respecter la biodiversité et ce qui vous entoure</li>
+                  </p>
+                  <a href="index.html" class="btn btn-success">Lire la suite...</a>
+              </div>
+            </div>
+      </article>
+      <article class="col p-2">
+        <div class="card">
+          <img src="medias/pollution-nature.jpg" 
+          class="card-img-top rounded-3" alt="Pollution">
+          <div class="card-body">
+              <h2 class="card-title">Lutter contre la pollution</h2>
+              <p class="card-text">
+                Les déchets dans la nature sont un problème majeur qui menace la biodiversité et 
+                la beauté de notre planète. Les déchets humains tels que les emballages en 
+                plastique, les bouteilles, les canettes, les mégots de cigarette, les sacs et 
+                autres débris sont souvent abandonnés dans la nature, polluant ainsi les sols, 
+                l'eau et l'air.<br>Les conséquences de cette pollution sont désastreuses pour les 
+                écosystèmes, la faune et la flore qui y vivent, ainsi que pour notre santé.
+                Il est important de prendre conscience de cette situation et d'adopter des 
+                comportements responsables pour limiter notre impact sur la nature. En effet, nous 
+                sommes tous responsables de nos gestes, qu'ils soient positifs ou négatifs pour 
+                l'environnement.<br>
+                Pour réduire les déchets dans la nature, il est essentiel de commencer par changer 
+                nos habitudes. Les gestes les plus simples sont souvent les plus efficaces : 
+                utiliser une bouteille réutilisable pour l'eau, apporter un sac réutilisable pour 
+                les courses, utiliser des boîtes en verre pour les repas à emporter, etc. En 
+                évitant d'utiliser des produits jetables, nous limitons notre production de 
+                déchets et réduisons donc l'impact humain sur la nature.<br>
+                L'éducation à l'environnement est réellement importante afin d'apprendre à trier 
+                les déchets pour leur donner une seconde vie. 
+                Les matériaux recyclables peuvent être transformés en nouveaux produits, ce qui 
+                permet de réduire la quantité de déchets et de préserver les ressources naturelles. 
+                Le tri des déchets est donc une étape cruciale pour protéger cette si jolie planète 
+                qu'est la Terre.<br>
+                Enfin, pour préserver la nature, il est important de sensibiliser les autres à 
+                cette problématique et de leur montrer l'exemple.<br> En encourageant les 
+                comportements éco-responsables, nous pouvons contribuer à créer un monde plus 
+                propre et plus durable.<br>
+                Nous avons tous un rôle à jouer pour préserver notre environnement en adoptant 
+                des comportements responsables, nous devons être conscients que chaque petit 
+                geste compte et qu'il est de notre responsabilité d'agir pour un avenir plus vert.
+              </p>
+              <a href="index.html" class="btn btn-success">Lire la suite...</a>
+          </div>
+      </div>
+      </article>
+      <article class="col p-2">
+        <div class="card">
+          <img src="medias/Protect-nature.jpg" 
+          class="card-img-top rounded-3" alt="Protect-nature">
+          <div class="card-body">
+              <h2 class="card-title">Nos actions</h2>
+              <p class="card-text">
+                Nous avons vu qu'il est donc crucial de sensibiliser les gens à la préservation de 
+                la nature et de leur montrer des actions concrètes à mener lors de leurs activités 
+                en plein air.
+                Voici quelques exemples d'actions que nous mettons en place au sein de notre 
+                association :             
+                <li>1. Organisation des journées de nettoyage : Nous réunissons plusieurs groupes 
+                de personnes afin de collecter les déchets laissés dans la nature. Nous choisissons
+                les zones particulièrement polluées et prévoyons des sacs poubelle et des 
+                gants pour les participants.</li>
+                
+                <li>2. Atelier éco-tourisme et sensibilisation à la nature : Nous organisons 
+                différents ateliers d'apprentissage et découverte. (ateliers de compostage, 
+                séances d'observation des paysages et des animaux sauvages, excursions guidées en 
+                forêt, réserves naturelles...)</li>
+                
+                <li>3. Journées de rencontre avec les professionnels du domaine environnementale : 
+                Rejoignez notre association et participez à des actions concrètes de 
+                sensibilisation.</li>
+                
+                En plus de ces activités, notre priorité est de vous transmettre les gestes 
+                concrets à appliquer lors de vos randonnées, des sports d'hiver ou de vos sorties 
+                observation de la faune et de la flore en montagne.
+                Voici quelques exemples d'actions que vous et vos enfants pouvez réaliser :
+                
+                <li><strong>Ramassez vos déchets :</strong> Ramassez tous vos déchets et ne laissez 
+                rien derrière vous. Si possible, ramassez également les déchets que vous trouvez 
+                sur votre chemin.</li>
+                
+                <li><strong>Respectez les sentiers :</strong> Restez sur les sentiers balisés et 
+                évitez de marcher sur les zones fragiles, comme les champs de neige ou les zones de 
+                végétation rare.</li>
+                
+                <li><strong>Réduisez votre empreinte carbone :</strong> Si possible, utilisez des 
+                transports en commun ou le covoiturage pour vous rendre sur le site de votre activité. 
+                Évitez également les activités qui ont un impact négatif sur l'environnement, 
+                comme la moto neige ou le quad.</li>
+                
+                <li><strong>Privilégiez les produits éco-responsables :</strong> Lorsque vous 
+                achetez des équipements ou des produits pour vos activités en plein air, 
+                privilégiez les produits éco-responsables en accord avec la nature.</li>
+                
+                Adoptez ces gestes simples et rejoignez-nous au sein de notre association, ensemble 
+                nous pouvons tous contribuer à préserver la beauté et la richesse de notre 
+                environnement naturel.
+              </p>
+              <a href="index.html" class="btn btn-success">Lire la suite...</a>
+          </div>
+      </div>
+      </article>
+</div>
+</section>
+</main>
+  <hr class="separator">
+    <div class="contact-wrapper">
+      <form class="form-horizontal" method="post" action="contact.php">
+        <h4 class="section-header">Posez-nous vos questions !</h4>
+        <label for="name">Nom</label>
+        <input 
+        type="text" 
+        id="name" 
+        placeholder="nom" 
+        name="name" required>
+        <label for="email">Email</label>
+        <input 
+        type="email" 
+        id="email" 
+        placeholder="email@mail.com" 
+        name="email" required>
+        <label for="phone">Téléphone</label>
+        <input 
+        type="tel" 
+        id="phone" 
+        placeholder="0600000000" 
+        name="phone">
+        <label for="category">Catégorie de question</label>
+        <select id="category" name="category">
+          <option value="default">Choisissez une catégorie</option>
+          <option value="help">Aide</option>
+          <option value="pro-contact">Contact professionnel</option>
+          <option value="Proposition">Proposition / Suggestion</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea 
+        rows="10" 
+        id="message" 
+        name="message" 
+        required>
+      </textarea>
+      <button 
+      class="send-button" 
+      id="submit" 
+      type="submit">Envoyer
+    </button>
+  </form>
+</div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>À propos</h3>
+      </div>
+      <div class="col-md-4">
+        <h3>Contact</h3>
+        <ul class="list-unstyled">
+          <li>Adresse : 123 rue de la Montagne, 75000 Paris</li>
+          <li>Téléphone : 01 23 45 67 89</li>
+          <li>Email : lesamisdelamontagne@gmail.com</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3>Empreinte environnementale</h3>
+        <p><strong>270ko</strong> de données</p>
+        <p><strong>0,14g</strong> de CO2</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="socials p-2 text-center">
+          <h3>Suivez-nous :</h3>
+          <a href="https://fr-fr.facebook.com/"><i class="fa-brands fa-facebook fa-bounce"></i></a>
+          <a href="https://twitter.com/?lang=fr"><i class="fa-brands fa-twitter fa-bounce"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-bounce"></i></a>
+          <a href="https://www.youtube.com/?hl=FR"><i class="fa-brands fa-youtube fa-bounce"></i></a>
+          <a href="https://fr.linkedin.com/"><i class="fa-brands fa-linkedin fa-bounce"></i></a>
+        </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p class="text-center">&copy;Copyright 2023 
+          <a href="index.html">Lesamisdelamontagne.com</a> - Tous droits réservés.</p>
+      </div>
+    </div>
+    
+      </div>
+    </div>
+  </div>
+      <div class="back-to-top">
+        <a href="index.html">
+          <button class="btn btn-primary">Retour vers le haut
+            <svg 
+            xmlns="http://www.w3.org/2000/svg"
+            width="32" 
+            height="32" 
+            fill="currentColor" 
+            class="bi bi-arrow-up-circle-fill" 
+            viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+            </svg>
+          </button>
+        </a>
+  </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" 
+crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" 
+crossorigin="anonymous"></script>   
+</body> 
+</html>
