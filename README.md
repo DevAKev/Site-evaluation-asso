@@ -1,6 +1,6 @@
 Titre et descritpion du projet : 
 Site web " Les amis de la montagne" 
-Ce site est développé à destination d'une association de défense de la montagne afin de sensibiliser les utilisateurs sur toutes les bonnes pratiques qui contribue à la défense de la nature. 
+Ce site est développé pour une association de défense de la montagne qui de sensibilise les utilisateurs sur toutes les bonnes pratiques qui contribuent à la défense de la nature. 
 Divers conseils y sont présentés ainsi qu'une description des actions menées et des évènements qui sont organisés par cette association.
 L'utilisation est volontairement simple pour correspondre aux consignes à respecter pour l'évaluation d'entrainement. 
 Voici les indications : Un site internet présente de nombreux intérêts pour une association, surtout en termes de visibilité (c’est
